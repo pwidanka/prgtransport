@@ -1,0 +1,100 @@
+<section id="kontakt" class="bg-dark">
+    <div class="container text-white">
+
+        <h2 class="d-flex align-items-center">
+            <div class="trapez-lewy"></div>
+            Kontakt
+        </h2>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <form class="needs-validation" [formGroup]="myForm" (ngSubmit)="onSubmit()" novalidate>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="firstName" class="form-label">Imię i nazwisko</label>
+                            <input type="text" class="form-control" id="firstName" formControlName="imie"
+                                [ngClass]="{ 'is-invalid': myForm.get('imie')?.touched && myForm.get('imie')?.hasError('required') }">
+                            <div class="invalid-feedback">
+                                Proszę uzupełnić imię i nazwisko
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" formControlName="email"
+                                [ngClass]="{ 'is-invalid': myForm.get('email')?.touched && (myForm.get('email')?.hasError('required') || myForm.get('email')?.hasError('email')) }">
+                            <div class="invalid-feedback">
+                                <span *ngIf="myForm.get('email')?.hasError('required')">Pole "E-mail" jest
+                                    wymagane.</span>
+                                <span *ngIf="myForm.get('email')?.hasError('email')">Wprowadź poprawny adres
+                                    e-mail.</span>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="validationTextarea" class="form-label">Wiadomość</label>
+                            <textarea class="form-control" id="validationTextarea" formControlName="wiadomosc"
+                                [ngClass]="{ 'is-invalid': myForm.get('wiadomosc')?.touched && myForm.get('wiadomosc')?.hasError('required') }"
+                                rows="5"></textarea>
+                            <div class="invalid-feedback">
+                                Napisz wiadomość
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="my-4">
+
+                    <button class="w-100 btn btn-lg moj-button" type="submit">Wyślij</button>
+                </form>
+
+                <div *ngIf="mailWyslany">
+                    <hr class="my-4">
+                    <div class="col-12 alert alert-success" role="alert">
+                        Twoj mail został wysłany
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="d-flex align-items-center">
+                    <span class="material-icons">phone_iphone</span>
+                    <div class="d-flex flex-column">
+                        <span class="tytul-kontaktu">Telefon:</span>
+                        <span class="dane-kontaktu"><a href="tel:+48780719067">Tel: 780 719 067</a></span>
+                        <span class="dane-kontaktu"><a href="tel:+48780719068">Tel: 780 719 068</a></span>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center py-3">
+                    <span class="material-icons">mail</span>
+                    <div class="d-flex flex-column">
+                        <span class="tytul-kontaktu">Email:</span>
+                        <span class="dane-kontaktu"><a href="mailto:prgtransport.kontakt@gmail.com">Email: prgtransport.kontakt@gmail.com</a></span>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center py-3">
+                    <span class="material-icons">location_on</span>
+                    <div class="d-flex flex-column">
+                        <span class="tytul-kontaktu">Adres:</span>
+                        <span class="dane-kontaktu">Pruszcz Gdański</span>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center py-3">
+                    <span class="material-icons">public</span>
+                    <div class="d-flex flex-column">
+                        <span class="tytul-kontaktu">Social media:</span>
+                        <div>
+                            <a href="https://www.facebook.com/profile.php?id=61553030566538" target="_blank">
+                                <i class="fa-brands fa-facebook ikonka-kontaktu"></i>
+                            </a>
+                            <!-- <i class="fa-brands fa-instagram ikonka-kontaktu"></i>
+                            <i class="fa-brands fa-whatsapp ikonka-kontaktu"></i> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

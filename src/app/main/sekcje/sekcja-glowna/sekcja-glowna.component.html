@@ -1,0 +1,45 @@
+<section class="overlay"></section>
+
+<section class="prg-transport d-flex flex-column align-items-center h-100">
+    <div class="d-flex w-100 align-items-center">
+        <div class="trapez-lewy"></div>
+        <div class="d-flex flex-column align-items-center">
+            <div class="airstrike-font">PRG</div>
+            <div class="time-font">TRANSPORT</div>
+        </div>
+        <div class="trapez-prawy"></div>
+    </div>
+
+    <div class="container-oferta d-flex flex-column justify-content-center w-100">
+
+        <div class="oferta">
+            <div class="oferujemy">
+                <h3>OFERUJEMY</h3>
+            </div>
+            <div class="uslugi">
+                <h2>USŁUGI TRANSPORTOWE</h2>
+            </div>
+            <div class="uslugi-nazwy">
+                <h3>PRZEPROWADZKI - BUS - BAGAŻÓWKA</h3>
+            </div>
+        </div>
+
+        <img class="bus-czarny" src="./assets/bus-czarny.png" alt="czarny-bus">
+
+        <div class="kontakty">
+            <div class="d-flex align-items-center telefon" (click)="callNumber1()">
+                <span class="material-icons">phone_iphone</span>
+                <span>780 719 068</span>
+            </div>
+            <div class="d-flex align-items-center telefon" (click)="callNumber2()">
+                <span class="material-icons">phone_iphone</span>
+                <span>780 719 067</span>
+            </div>
+        </div>
+
+        <div class="d-flex w-100 justify-content-center">
+            <button type="button" class="d-flex align-items-center wspolpraca btn btn-lg moj-button" (click)="scrollTo()">
+                <span class="material-icons">handshake</span>Podejmij stałą współpracę!</button>
+        </div>
+    </div>
+</section>

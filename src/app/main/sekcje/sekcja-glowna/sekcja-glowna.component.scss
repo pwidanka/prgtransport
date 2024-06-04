@@ -1,0 +1,191 @@
+.prg-transport {
+    position: relative;
+    color: white;
+
+    .trapez-lewy {
+        width: 100%;
+        height: 120px;
+        background: -webkit-linear-gradient(330deg, #BC9409 91%, transparent 0);
+    }
+
+    .trapez-prawy {
+        width: 100%;
+        height: 120px;
+        background: -webkit-linear-gradient(160deg, #BC9409 91%, transparent 0);
+    }
+
+    .airstrike-font {
+        font-family: 'airstrike';
+        font-size: 5rem;
+        height: 80px;
+    }
+
+    .time-font {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3rem;
+    }
+
+    .bus-czarny {
+        position: absolute;
+        bottom: 100px;
+        left: 1px;
+        transform: scaleX(-1);
+        z-index: 1;
+        width: 35vw;
+    }
+
+    .kontakty{
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+        z-index: 1;
+        font-size: 2rem;
+
+        .material-icons{
+            background: #BC9409;
+            border-radius: 50%;
+            padding: 5px;
+            margin-right: 10px;
+            color: white;
+        }
+
+        .telefon{
+            cursor: pointer;
+        }
+    }
+
+    .oferta {
+        transform: rotate(-10deg);
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 100px;
+
+        .oferujemy {
+            font-weight: bold;
+            font-size: 30px;
+
+            h3{
+               margin-bottom: 30px; 
+            }
+        }
+
+        .uslugi {
+            font-weight: bold;
+            background-color: #BC9409;
+            padding: 0 30px;
+
+            h2 {
+                font-size: 5rem;
+                line-height: .5;
+            }
+        }
+
+        .uslugi-nazwy {
+            font-weight: 100;
+            font-size: 30px;
+
+            h3 {
+                font-weight: lighter;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .prg-transport {
+    
+        .trapez-lewy {
+            height:60px;
+            background: -webkit-linear-gradient(330deg, #BC9409 71%, transparent 0);
+        }
+    
+        .trapez-prawy {
+            height: 60px;
+            background: -webkit-linear-gradient(160deg, #BC9409 71%, transparent 0);
+        }
+    
+        .airstrike-font {
+            font-family: 'airstrike';
+            font-size: 3rem;
+            height: 50px;
+        }
+    
+        .time-font {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+        }
+    
+        .bus-czarny {
+            position: static;
+            transform: scaleX(-1);
+            z-index: 1;
+            width: 95vw;
+        }
+    
+        .kontakty{
+            position: static;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: self-end;
+    
+            .material-icons{
+                background: #BC9409;
+                border-radius: 50%;
+                padding: 5px;
+                margin-right: 10px;
+                color: white;
+                font-size: 18px;
+            }
+        }
+
+        .wspolpraca{
+            margin-top: 10px;
+            width: 80%;
+            text-align: center;
+        }
+
+        .container-oferta{
+            height: 100%;
+        }
+    
+        .oferta {
+            transform: rotate(-10deg);
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 30px;
+    
+            .oferujemy {
+                font-weight: bold;
+                font-size: 20px;
+    
+                h3{
+                   margin-bottom: 20px; 
+                }
+            }
+    
+            .uslugi {
+                font-weight: bold;
+                background-color: #BC9409;
+                padding: 0 20px;
+    
+                h2 {
+                    font-size: 26px;
+                    // line-height: .5;
+                }
+            }
+    
+            .uslugi-nazwy {
+                font-weight: 100;
+                font-size: 20px;
+    
+                h3 {
+                    font-weight: lighter;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+  }

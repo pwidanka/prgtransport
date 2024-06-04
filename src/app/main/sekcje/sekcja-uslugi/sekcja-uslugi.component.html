@@ -1,0 +1,32 @@
+<section class="overlay"></section>
+
+<section id="uslugi" class="position-relative d-flex flex-column align-items-center">
+    <div class="container text-white">
+
+        <h2 class="pb-2 border-bottom d-flex align-items-center">
+            <div class="trapez-lewy"></div>
+            Usługi
+        </h2>
+
+        <div class="py-2" id="custom-cards">
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-2">
+                <div class="col" *ngFor="let usluga of uslugi">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+                        <div class="col align-items-start d-flex h-100 p-4 pb-2 text-white text-shadow-1">
+                            <div class="icon-square flex-shrink-0 me-3">
+                                <span class="material-icons">{{usluga.ikonka}}</span>
+                            </div>
+                            <div>
+                              <h2>{{usluga.tytul}}</h2>
+                              <p>{{usluga.opis}}</p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

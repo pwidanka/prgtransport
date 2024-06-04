@@ -1,0 +1,26 @@
+.container {
+    padding: 50px 10px;
+
+    h2 {
+        padding-bottom: 20px;
+        color: #BC9409;
+
+        .trapez-lewy {
+            width: 100px;
+            height: 50px;
+            background: -webkit-linear-gradient(330deg, #BC9409 70%, transparent 0);
+        }
+
+    }
+}
+
+
+.icon-square {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: .75rem;
+}

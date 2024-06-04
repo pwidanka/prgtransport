@@ -1,0 +1,46 @@
+.container {
+    padding: 50px 10px;
+
+    h2 {
+        padding-bottom: 20px;
+
+        .trapez-lewy {
+            width: 100px;
+            height: 50px;
+            background: -webkit-linear-gradient(330deg, #BC9409 70%, transparent 0);
+        }
+
+    }
+
+    .moj-button {
+        background: #BC9409;
+        color: white;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .material-icons,
+    .ikonka-kontaktu{
+        background: #BC9409;
+        border-radius: 50%;
+        padding: 5px;
+        margin-right: 10px;
+        color: white;
+        font-size: 30px;
+    }
+
+    .tytul-kontaktu{
+        font-size: 25px;
+    }
+
+    .dane-kontaktu{
+        font-size: 20px;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

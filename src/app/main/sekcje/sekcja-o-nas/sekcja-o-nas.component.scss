@@ -1,0 +1,14 @@
+.container{
+    padding: 50px 10px;
+
+    h2{
+        padding-bottom: 20px;
+
+        .trapez-lewy {
+            width: 100px;
+            height: 50px;
+            background: -webkit-linear-gradient(330deg, #BC9409 70%, transparent 0);
+        }
+    
+    }
+}
