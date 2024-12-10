@@ -16,30 +16,20 @@
             <div class="oferujemy">
                 <h3>OFERUJEMY</h3>
             </div>
-            <div class="uslugi">
-                <h2>USŁUGI TRANSPORTOWE</h2>
-            </div>
             <div class="uslugi-nazwy">
-                <h3>PRZEPROWADZKI - BUS - BAGAŻÓWKA</h3>
+                <h3>PRZEPROWADZKI - TRANSPORT - BAGAŻÓWKA</h3>
+            </div>
+            <div class="opis">
+                Z naszą pomocą przeprowadzisz się do dowolnej dzielnicy Trójmiasta, w okolice Trójmiasta, do innego miasta, a nawet do innego kraju ! Nasze usługi wykonywane są kompleksowo,  bezpiecznie i atrakcyjnie finansowo !
             </div>
         </div>
 
         <img class="bus-czarny" src="./assets/bus-czarny.png" alt="czarny-bus">
 
-        <div class="kontakty">
-            <div class="d-flex align-items-center telefon" (click)="callNumber1()">
-                <span class="material-icons">phone_iphone</span>
-                <span>780 719 068</span>
-            </div>
-            <div class="d-flex align-items-center telefon" (click)="callNumber2()">
-                <span class="material-icons">phone_iphone</span>
-                <span>780 719 067</span>
-            </div>
+        <div class="d-flex flex-column align-items-center gap-4 buttons-container">
+            <button type="button" class="btn btn-lg moj-button" (click)="callNumber1()">Zadzwoń: 780 719 067</button>
+            <button type="button" class="btn btn-lg moj-button" (click)="scrollTo()">Napisz do nas</button>
         </div>
-
-        <div class="d-flex w-100 justify-content-center">
-            <button type="button" class="d-flex align-items-center wspolpraca btn btn-lg moj-button" (click)="scrollTo()">
-                <span class="material-icons">handshake</span>Podejmij stałą współpracę!</button>
-        </div>
+    
     </div>
 </section>

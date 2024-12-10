@@ -12,15 +12,11 @@ import { Component } from '@angular/core';
 export class SekcjaGlownaComponent {
 
   callNumber1(){
-    window.location.href = 'tel:+48780719068';
-  }
-
-  callNumber2(){
-    window.location.href = 'tel:+48780719067';
+    window.location.href = 'tel:780719067';
   }
 
   scrollTo(): void {
-    const element = document.querySelector('#wspolpraca');
+    const element = document.querySelector('#kontakt');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
     }
