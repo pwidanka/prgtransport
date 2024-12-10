@@ -15,6 +15,5 @@ export class SekcjaUslugiComponent {
     { ikonka: 'public', tytul: 'Przeprowadzki międzynarodowe', opis: 'Nasza firma specjalizuje się w przeprowadzkach międzynarodowych, oferując kompleksową obsługę od pakowania po dostarczenie mienia do nowego kraju, zapewniając spokojny start w nowym otoczeniu.' },
     { ikonka: 'weekend', tytul: 'Utylizacja starych mebli', opis: 'Nasza firma transportowa oferuje kompleksową usługę utylizacji starych mebli, pomagając klientom pozbyć się niepotrzebnego wyposażenia w sposób ekologiczny i zgodny z obowiązującymi przepisami.' },
     { ikonka: 'construction', tytul: 'Wywóz odpadów po remoncie', opis: 'Zrealizujemy wywóz odpadów powstałych podczas remontu. Zadbamy o bezpieczny transport wszelkiego rodzaju odpadów budowlanych, takich jak gruz, stare materiały czy opakowania.' },
-    { ikonka: 'schedule', tytul: 'Pracujemy 24/7', opis: 'Jesteśmy firmą transportową, która wyróżnia się całodobową dostępnością. Bez względu na porę dnia, zapewniamy niezawodne usługi logistyczne, zawsze gotowi sprostać oczekiwaniom naszych klientów. Nasza obsługa klienta 24/7 pozwala dostarczać szybkie i efektywne rozwiązania, czyniąc nas renomowanym partnerem w branży transportowej.' },
   ]
 }
